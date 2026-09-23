@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def calculate_stable_time_step(grid_spacing, diffusivity):
-    return 0.5 * grid_spacing./difussivity**2 / D
+    return 0.5 * grid_spacing**2/diffusivity
 
 def plot_profile(xvals, yvals, color="r", title=None, outfile="plot.png"):
     plt.figure()
