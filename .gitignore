@@ -1,7 +1,15 @@
 
+
 .ipynb_checkpoints
 
 #Ignore output images
 *.png
 
 __pycache__/
+#Ignore virtual environment directory
+
+venv
+
+#Ignore build artifacts
+*.egg-info
+
