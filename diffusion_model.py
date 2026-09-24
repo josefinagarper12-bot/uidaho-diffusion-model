@@ -6,13 +6,15 @@ def calculate_stable_time_step(grid_spacing, diffusivity):
     return 0.5 * grid_spacing**2 / diffusivity
 
 
-def plot_profile(xvals, yvals, color="r", title=None, outfile="plot.png"):
+def plot_profile(xvals, yvals, color="r", title=None, outfile=None):
     plt.figure()
     plt.plot(xvals, yvals, color)
     plt.xlabel("distance")
     plt.ylabel("elevation")
-    plt.title(title)
-    plt.savefig(outfile)
+    if title is not None:
+        plt.title(title)
+    if outfile is not None:
+        plt.savefig(outfile)
 
 
 if __name__ == "__main__":
